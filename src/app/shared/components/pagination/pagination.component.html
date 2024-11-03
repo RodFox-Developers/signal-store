@@ -1,0 +1,14 @@
+<nav aria-label="Page navigation example">
+  <ul class="inline-flex -space-x-px text-base h-10">
+
+    <li *ngFor="let page of pages">
+      <a        
+        role="button"
+        [ngClass]="{'flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:text-white': true, 'dark:bg-gray-800': currentPage !== page, 'dark:bg-gray-700': currentPage === page}"  
+        (click)="changePage.emit(page)"           
+        >{{ page }}</a
+      >
+    </li>
+
+  </ul>
+</nav>

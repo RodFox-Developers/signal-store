@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+a {
+  padding: 0.5rem 1rem;
+}
+
+a.active {
+  @apply bg-gray-700;
+  padding: 0.5rem 1rem;
+}
